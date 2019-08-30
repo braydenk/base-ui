@@ -2,6 +2,7 @@ html {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
   line-height: 1.6;
+  color: lighten(#000, 20%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,6 +14,11 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
+}
+
+a {
+  color: #f78536;
+  text-decoration: none;
 }
 
 .button {
@@ -31,4 +37,50 @@ h6 {
 .button:focus {
   background: darken(#f78536, 10%);
   border: 1px solid darken(#f78536, 10%);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  border: 1px solid black;
+  margin: 8px;
+  padding: 8px;
+}
+
+.card {
+  flex: 1 1 50%;
+  position: relative;
+  border: 1px solid #efefef;
+}
+
+.card-content {
+  padding: 30px 30px 110px;
+}
+
+.card-actions {
+  border-top: 1px solid #efefef;
+  margin: 0 30px;
+  padding: 30px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.card h1 {
+  margin: 0;
+}
+
+.card p {
+  margin: 0 0 30px;
+}
+
+.subtitle {
+  margin: 0 0 15px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #e76c67;
 }
